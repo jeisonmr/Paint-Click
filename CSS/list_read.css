@@ -1,0 +1,90 @@
+* {
+    /* Margen, padding y posicionamiento por defecto en 0 */
+  flex-basis: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.section-container {
+  /* SECTION CONTAINER
+ Dimensiones del section  */
+  width: 100vw;
+  height: 100vh;
+  /*Fondo del section */
+  background-image: url(../IMG/JPG/listRead/fondoListRead.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.div-main {
+  /* DIV MAIN
+ Dimensiones del main  */
+  width: 100vw;
+  height: 100vh;
+  /* posicionamiento */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.div-cuentos {
+  /* DIV Pintar. Leer, Jugar
+    Dimensionamiento */
+  width: 25vw;
+  height: 99vh;
+  /* Posicionamiento */
+  position: relative;
+  text-align: center;
+}
+.btn {
+  /* Button Pintar, Leer, Jugar Dimensionamiento*/
+  width: 20vw;
+  height: 88vh;
+  /* Estilos */
+  border-radius: 20px;
+  /* Posicionamiento*/
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 3vh 0 0 2.3vw;
+  /* Efectos */
+  transition: 0.5s;
+  border: none;
+}
+.img{
+  /* Dimensionamiento */
+  width: 20vw;
+  height: 88vh;
+  /* Estilos */
+  border-radius: 20px;
+}
+.txt {
+  /* Texto Titulos de Cuentos Posicionamiento */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* Estilos */
+  font-family: "Walter Turncoat", cursive;
+  font-size: 2.9vw;
+  color: #fff;
+}
+.txt2{
+  font-size: 2.8vw;
+}
+
+/* Efectos visuales HOVER */
+.btn-c1:hover {
+  box-shadow: 0px 0px 31px 26px #000080b5;
+}
+.btn-c2:hover {
+  box-shadow: 0px 0px 31px 26px #800080b5;
+}
+.btn-c3:hover {
+  box-shadow: 0px 0px 31px 26px #ffff00b5;
+}
+.btn-c4:hover {
+  box-shadow: 0px 0px 31px 26px #800000b5;
+}

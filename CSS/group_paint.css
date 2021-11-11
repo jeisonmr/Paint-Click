@@ -1,0 +1,86 @@
+* {
+  /* Margen, padding y posicionamiento por defecto en 0 */
+  flex-basis: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.section-container {
+  /* SECTION CONTAINER Dimensiones del section  */
+  width: 100vw;
+  height: 100vh;
+  /*Fondo del section */
+  background-image: url(../IMG/GPAINTBG/13.png);
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: 2s;
+}
+.backImg{
+  width: 100vw;
+  height: 100vh;
+  transition: 2s;
+}
+
+.div-main_group {
+  /* DIV MAIN Dimensiones del main  */
+  width: 100vw;
+  height: 100vh;
+  /* posicionamiento */
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(2, auto);
+
+  position: absolute;
+}
+.div-dibujos {
+  /* DIV Pintar. Leer, Jugar Dimensionamiento */
+  width: 16.6vw;
+  height: 50vh;
+  /* Posicionamiento */
+  position: relative;
+  text-align: center;
+}
+.btn-dibujos {
+  /* Botones de la lista de categorias de dibujos Dimensionamiento del boton*/
+  width: 12vw;
+  height: 28vh;
+  /* Configuracion de los botones*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*Estilos*/
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  overflow: hidden;
+}
+.btnD1,
+.btnD2,
+.btnD3,
+.btnD4,
+.btnD5,
+.btnD6 {
+  margin: 6vh 0 0 0;
+}
+.btnD7,.btnD8,.btnD9,.btnD10,.btnD11,.btnD12 {
+  margin: 15vh 0 0 0;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+p {
+  /* Texto Titulos de Cuentos Posicionamiento */
+  position: absolute;
+  bottom: 5;
+  left: 0;
+  right: 0;
+  /* Estilos */
+  font-family: "Walter Turncoat", cursive;
+  font-size: 2vw;
+  color: #fff;
+}

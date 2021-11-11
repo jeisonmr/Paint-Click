@@ -1,0 +1,235 @@
+* {
+  /* Margen, padding y posicionamiento por defecto en 0 */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+:root {
+  /*paleta de colores para el juego pintar*/
+  --rojo: #FF0000;
+  --naranja: #E67E22;
+  --amarillo: #FFEB3B;
+  --verde-claro: #33FF33;
+  --verde-oscuro: #145A32;
+  --azul-claro: #29B6F6;
+  --azul-oscuro: #1B4F72;
+  --violeta: #BA68C8;
+  --morado: #4A235A;
+  --magenta: #E91E63 ;
+  --negro: #000;
+  --fuchsia: #FF00FF;
+  --blanco: #fff;
+  --madera: #4E342E;
+  --gris: #4D5656;
+}
+.section-container {
+  /* SECTION CONTAINER
+     Dimensiones del section  */
+  width: 100vw;
+  height: 100vh;
+}
+.div-main {
+  /* DIV MAIN
+     Dimensiones del main  */
+  width: 100vw;
+  height: 100vh;
+  /* posicionamiento */
+  display: grid;
+  grid-template-columns: 120px 150px auto;
+  backdrop-filter: blur(9px);
+  background-color: #8feb33;
+}
+
+/* Menu lateral izquierdo */
+.div-menu {
+  /* Dimensionamiento */
+  width: 120px;
+  height: 100vh;
+  /* Estilos*/
+  background-color: #1B5E20;
+  /* Posicionamiento */
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+}
+.img-botones {
+  width: 40px;
+}
+.btn-home {
+  background-color: #82d9f4;
+  border: solid 10px #45c0e7;
+}
+.btn-atras {
+  background-color: #82f49b;
+  border: solid 10px #58b121;
+}
+.btn-basura {
+  background-color: #fd6363;
+  border: solid 10px #cb2240;
+}
+.btn-camara{
+  background-color: #B582F4;
+  border: solid 10px #8122CB;
+}
+.btn-printer{
+  background-color: #82C4F4;
+  border: solid 10px #2247CB;
+}
+.btnmenu {
+  /* Dimensionamiento */
+  width: 100px;
+  height: 100px;
+  /* Estilos */
+  border-radius: 50%;
+  margin: 0 12px;
+}
+.div-menu_lapiz{
+  /* Dimensionamiento */
+  width: 120px;
+  height: 100vh;
+  /* Estilos*/
+  background-color: #71c022;
+  border-radius: 0 20px 20px 0;
+  /* Posicionamiento */
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+}
+.div-grupo_lapiz{
+  /* Dimensionamiento */
+  height: 70vh;
+  /* Posicionamiento */
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  /* grid-template-rows: repeat(7, auto); */
+  text-align: center;
+}
+.btn-lp_color{
+  /* Dimensionamiento */
+    width: 40px;
+    height:40px;
+  /* Posicionamiento */
+    padding: 1px 2px;
+  /* Estilos */
+    border-radius: 50%;
+    border:  solid 4px #767676;
+}
+.div-puntero{
+  /* Posicionamiento */
+  text-align: center;
+}
+.btn-puntero{
+  /* Estilos */
+  border-radius: 50%;
+  border: none;
+  margin: 2px;
+}
+.puntero-1{width: 10px; height: 10px;}
+.puntero-2{width: 15px; height: 15px;}
+.puntero-3{width: 25px; height: 25px;}
+.puntero-4{width: 35px; height: 35px;}
+
+/* Paleta de colores del CANVAS */
+.color1{background-color: var(--rojo)}
+.color2{background-color: var(--naranja)}
+.color3{background-color: var(--amarillo)}
+.color4{background-color: var(--verde-claro)}
+.color5{background-color: var(--verde-oscuro)}
+.color6{background-color: var(--azul-claro)}
+.color7{background-color: var(--azul-oscuro)}
+.color8{background-color: var(--violeta)}
+.color9{background-color: var(--morado)}
+.color10{background-color: var(--magenta)}
+.color11{background-color: var(--negro)}
+.color12{background-color: var(--fuchsia)}
+.color13{background-color: var(--blanco)}
+.color14{background-color: var(--madera)}
+.color15{background-color: var(--gris)}
+
+.btn-lp_borrador{
+  /* Dimensionamiento */
+  width: 117px;
+  height: 70px;
+  /* Estilos */
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+}
+/* Borrador */
+.img-borrador{
+  width: 90px;
+  height: 70px;
+  /* filter:invert(1); */
+}
+/* DIV Lienzo CANVAS */
+.div-lienzo{
+  /* dimensionamiento*/
+  width: 1520px;
+  height: 900px;
+  /* Posicionamiento */
+  margin:auto;
+  z-index: 200;
+  /* Estilos */
+  /* background-color: var(--fuchsia); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 20px;
+}
+/* .div-canvas{
+  width: 80vw;
+  height: 90vh;
+  background-color: #145A32;
+} */
+.canvasPaint{
+  /* Dimensionamiento */
+  /* width: 1520px;
+  height: 900px; */
+  /* Estilos */
+  border: 5px solid #5d4318;
+  border-style: dashed;
+  border-radius: 20px;
+  /* background-color: var(--blanco); */
+  /* Posicionamiento */
+  z-index: 50;
+}
+/* Efectos Visuales HOVER */
+
+.btnmenu:hover {
+  box-shadow: 0px 0px 10px 8px var(--blanco);
+}
+.btn-lp_color:hover{
+  border-color: var(--blanco);
+  color: #ffeb3b12;
+}
+.btn-puntero:hover{
+  box-shadow: 0px 0px 10px 8px var(--blanco);
+}
+
+/* Responsive Desing */
+@media (max-width: 1360px) {
+
+  /* DIV Lienzo CANVAS */
+.div-lienzo{
+  /* Posicionamiento */
+  margin:auto;
+  z-index: 200;
+  /* Estilos */
+  /* background-color: var(--blanco); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 20px;
+}
+.canvasPaint{
+  /* Estilos */
+  /* border: 1px solid var(--rojo); */
+  margin: 20px auto;
+  /* Posicionamiento */
+  z-index: 50;
+  }
+}

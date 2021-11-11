@@ -1,0 +1,78 @@
+* {
+    /* Margen, padding y posicionamiento por defecto en 0 */
+  flex-basis: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.section-container {
+  /* SECTION CONTAINER Dimensiones del section  */
+  width: 100vw;
+  height: 100vh;
+  /*Fondo del section */
+  background-image: url(../IMG/JPG/home/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.div-main_home {
+  /* DIV MAIN Dimensiones del main  */
+  width: 100vw;
+  height: 100vh;
+  /* posicionamiento */
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  position: relative;
+}
+.divSec {
+  /* DIV Pintar. Leer, Jugar Dimensionamiento */
+  width: 46vw;
+  height: 95vh;
+  /* Posicionamiento */
+  margin: 2.5vh;
+  text-align: center;
+  align-items: center;
+}
+.btn {
+  /* Button Pintar, Leer, Jugar Dimensionamiento*/
+  width: 40vw;
+  height: 88vh;
+  /* Estilos */
+  border: none;
+  border-radius: 20px;
+  /* Posicionamiento*/
+  margin:auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-pintar {
+  /* Boton Pintar Imagen de fondo*/
+  background-image: url(../IMG/JPG/home/pintar.jpg);
+}
+.btn-lectura {
+  /* Boton Leer Imagen de fondo*/
+  background-image: url(../IMG/JPG/home/leer.jpg);
+}
+.txt {
+  /* Texto dentro los botones Estilos*/
+  font-family: rubik;
+  font-size: 3vw;
+  font-weight: bold;
+  /* Posicionamiento */
+  position: absolute;
+  bottom: 0;
+  /* Estilos*/
+  color: #fff;
+}
+/* Efectos Visuales HOVER */
+.btn-pintar:hover {
+  box-shadow: 0px 0px 31px 26px #00ff2ab5;
+}
+.btn-lectura:hover{
+  box-shadow: 0px 0px 31px 26px #0003b1b5;
+}

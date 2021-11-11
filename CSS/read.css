@@ -1,0 +1,131 @@
+* {
+  /* Margen, padding y posicionamiento por defecto en 0 */
+  flex-basis: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.section-container {
+  /* SECTION CONTAINER Dimensiones del section  */
+  width: 100vw;
+  height: 100vh;
+  /*Fondo del section */
+  background-image: url(../IMG/JPG/listRead/fondoListRead.jpg);
+  background-size: cover;
+}
+.div-main_read {
+  /* DIV MAIN Dimensiones del main  */
+  width: 100vw;
+  height: 100vh;
+  /* posicionamiento */
+  display: grid;
+  grid-template-columns: 150px auto 251px;
+}
+.div-menu{
+  /* Dimensionamiento */
+  width: 180px;
+  height: 100vh;
+  /* Estilos*/
+  border-radius: 0 50px 50px 0;
+  /* Posicionamiento */
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  position:fixed ;
+  margin-left: 30px;
+}
+.btnLectura {
+  /* Dimensionamiento */
+  width: 100px;
+  height: 100px;
+  /* Estilos */
+  border-radius: 50%;
+  margin: 0 12px;
+}
+.btn-home {
+  background-color: #82d9f4;
+  border: solid 10px #45c0e7;
+}
+.btn-atras {
+  background-color: #82f49b;
+  border: solid 10px #58b121;
+}
+.btn-textoVoz {
+  background-color: #fd6363;
+  border: solid 10px #cb2240;
+}
+.img-btn-lectura{
+  width: 40px;
+}
+.div-mesa {
+  /* Dimensionamiento */
+  width: 1450px;
+  /* Posicionamiento */
+  margin: 0 150px 0 150px;
+  overflow: auto;
+}
+.div-mesa::-webkit-scrollbar{
+  color: transparent;
+}
+.div-libro {
+  width: 1400px;
+  /* Estilos */
+  background-color: #000000c5;
+  border-radius: 10px 10px 10px 10px;
+  /* Posicionamiento */
+  margin: 10px auto;
+  color: #fff;
+}
+.history-Container{
+  font-family: 'Anton', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  font-size: 23px;
+  text-align: justify;
+  padding: 10px 30px;
+}
+.title{
+  text-align: center;
+  color: #f7cb0b;
+  font-size: 150px;
+  font-family: 'Architects Daughter', cursive;
+  font-family: 'Festive', cursive;
+}
+.div-banner {
+  /* Dimensionamiento */
+  width: 250px;
+  height: 100vh;
+  /* Estilos */
+  background-color: #80000063;
+  border-radius: 50px 0px 0px 50px;
+  margin-left: auto;
+  position:absolute; ;
+}
+.img-banner{
+  width: 249px;
+  height: 100vh;
+  border-radius: 50px 0px 0px 50px;
+}
+
+/* Efectos Visuales HOVER */
+.btnLectura:hover {
+  box-shadow: 0px 0px 6px 10px #ffffff;
+}
+
+/* Media Querys*/
+@media (max-width: 1360px){
+  .btnLectura {
+    /* Estilos */
+    margin: 0 6px;
+  }
+  .div-mesa {
+    /* Dimensionamiento */
+    width: 900px;
+    /* Posicionamiento */
+    margin: 0 150px 0 150px;
+  }
+  .div-libro {
+    width: 850px;
+  }
+}
