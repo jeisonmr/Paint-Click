@@ -215,14 +215,29 @@ canvas.addEventListener("mousemove", dibujar);
 let imgG = localStorage.getItem("Grupo");
 let imgL = localStorage.getItem("Lista");
 
-// Cargar el lienzo y el dibujo
-const upImage = (imgG, imgL) => {
-  const picture = document.createElement("img");
-  const fondo = document.createElement("img");
 
-  fondo.src = "../IMG/GPAINT/fondoCanvas.jpg";
-  picture.src = `../IMG/CVS/pgImg${imgG}/img${imgL}.jpg`;
-  fondo.onload = () => ctx.drawImage(fondo, 0, 0);
-  picture.onload = () => ctx.drawImage(picture, 505, 50);
+// window.onload = upImage(imgG, imgL);
+
+// Cargar el lienzo y el dibujo
+function upImage(imgG, imgL){
+let fondo = new Image();
+let picture = new Image();
+
+
+fondo.src = "../IMG/GPAINT/fondoCanvas.jpg";
+
+fondo.onload = () => {
+  ctx.drawImage(fondo, 0, 0);
+
+    picture.src = `../IMG/CVS/pgImg${imgG}/img${imgL}.jpg`;
+    picture.onload = () => {
+      ctx.drawImage(picture, 505, 50);
+    }
+  }
 };
+
 upImage(imgG, imgL);
+
+
+// canvas.width = 1510;
+// canvas.height = 890;

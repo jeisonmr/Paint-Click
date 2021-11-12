@@ -174,17 +174,9 @@ body {
   margin:auto;
   z-index: 200;
   /* Estilos */
-  /* background-color: var(--fuchsia); */
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  /* background-color: var(--blanco); */
   border-radius: 20px;
 }
-/* .div-canvas{
-  width: 80vw;
-  height: 90vh;
-  background-color: #145A32;
-} */
 .canvasPaint{
   /* Dimensionamiento */
   /* width: 1520px;
@@ -193,12 +185,12 @@ body {
   border: 5px solid #5d4318;
   border-style: dashed;
   border-radius: 20px;
-  /* background-color: var(--blanco); */
+  background-color: var(--blanco);
   /* Posicionamiento */
-  z-index: 50;
+  /* z-index: 50; */
 }
-/* Efectos Visuales HOVER */
 
+/* Efectos Visuales HOVER */
 .btnmenu:hover {
   box-shadow: 0px 0px 10px 8px var(--blanco);
 }
