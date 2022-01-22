@@ -1,1 +1,1 @@
-# Paint Kids
+# Paint Click
